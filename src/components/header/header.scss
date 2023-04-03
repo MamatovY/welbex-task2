@@ -1,0 +1,99 @@
+@import './../../assets/scss/mixin.scss';
+
+.header {
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include adaptive-value('padding-top', 57, 20, 1);
+        @include adaptive-value('padding-bottom', 57, 20, 1);
+
+    }
+
+    &__left {
+        display: flex;
+        align-items: flex-start;
+        @include adaptive-value('gap', 52, 0, 1);
+
+        &-logo {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            @include adaptive-value('font-size', 10, 5, 1);
+            @include adaptive-value('width', 140, 70, 1);
+
+
+            img {
+                @include adaptive-value('margin-bottom', 10, 5, 1);
+            }
+        }
+
+        &-nav {
+            display: flex;
+            align-items: flex-start;
+            @include adaptive-value('gap', 31, 16, 1);
+        }
+    }
+
+
+    &__contacts {
+        display: flex;
+        text-align: right;
+        align-items: flex-start;
+        @include adaptive-value('gap', 30, 0, 1);
+
+        >div {
+            position: relative;
+            left: -15px;
+        }
+
+        svg {
+            @include adaptive-value('width', 20, 10, 1);
+            @include adaptive-value('height', 20, 10, 1);
+        }
+    }
+}
+
+
+@media(max-width:800px) {
+    .header {
+
+        &__contacts {
+
+            >div {
+                left: 0px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .header {
+        background: #0E1014;
+
+        &__left {
+            width: 100%;
+
+            &-logo {
+                display: none;
+            }
+
+            &-nav {
+                justify-content: space-between;
+                width: 100%;
+
+                &-none {
+                    display: none;
+                }
+            }
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+    }
+}

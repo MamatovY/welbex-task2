@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import './assets/scss/mixin.scss';
+
+body {
+  background: #0E1014;
+}
+
+
+.App {
+  font-family: 'Inter';
+  @include adaptive-value('font-size', 16, 8, 1);
+  font-weight: 500;
+  color: #E4E5EA;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  @include adaptive-value ('line-height', 29, 15, 1);
+
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  @include adaptive-value('font-size', 48, 36, 1);
+  @include adaptive-value ('line-height', 58, 44, 1);
+  font-weight: 400;
+  line-height: 58px;
+  color: #E4E5EA;
+}
+
+h2 {
+  @include adaptive-value('font-size', 35, 16, 1);
+}
+
+h3 {
+  @include adaptive-value('font-size', 18, 13, 1);
+}
+
+h4 {
+  @include adaptive-value('font-size', 20, 12, 1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include adaptive-value('padding-left', 30, 16, 1);
+  @include adaptive-value('padding-right', 30, 16, 1);
+  // border: 1px solid red;
+}
+
+.main {
+  position: relative;
+  z-index: 10;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+}
+
+
+form,
+input {
+  margin: 0px;
+  padding: 0px;
+}
+
+span {
+  font-weight: 700;
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+
+
+
+
+@media(max-width:768px) {
+  .App {
+    @include adaptive-value('font-size', 24, 12, 1);
+  }
+
+  h1 {}
+}

@@ -1,0 +1,85 @@
+@import './../../assets/scss/mixin.scss';
+
+.footer {
+
+    &__main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+
+
+        &-title {
+            color: #656566;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include adaptive-value('font-size', 14, 12, 1);
+        }
+
+        &__menu {
+            &-desc {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: start;
+                column-gap: 52px;
+                @include adaptive-value('column-gap', 52, 48, 1);
+            }
+        }
+
+        &__contacts {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 10px;
+            text-align: right;
+            @include adaptive-value('margin-left', 65, 0, 1);
+
+            &-imgs {
+                display: flex;
+                gap: 10px;
+                justify-content: flex-end;
+
+                svg {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    &__foot {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 33px;
+        padding-bottom: 20px;
+
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .footer {
+        @include adaptive-value('padding-top', 80, 45, 1);
+        @include adaptive-value('padding-bottom', 100, 40, 1);
+        background: #0E1014;
+
+        &__main {
+            grid-template-columns: auto;
+            gap: 30px;
+
+            &__contacts {
+                margin-bottom: 20px;
+                text-align: left;
+
+                &-imgs {
+                    justify-content: start;
+                }
+            }
+        }
+
+        &__foot {
+            text-align: left;
+            display: block;
+        }
+    }
+
+}
