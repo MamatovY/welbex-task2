@@ -13,11 +13,13 @@ const Footer = () => {
                         <div className="footer__main-title">
                             О компании
                         </div>
-                        <div>
-                            Партнёрская программа
-                        </div>
-                        <div>
-                            Вакансии
+                        <div className="footer__main__company-desc">
+                            <div>
+                                Партнёрская программа
+                            </div>
+                            <div>
+                                Вакансии
+                            </div>
                         </div>
                     </div>
                     <div className="footer__main__menu">
@@ -80,7 +82,9 @@ const Footer = () => {
                 </div>
                 <div className="footer__foot">
                     <div>
-                        ©WELBEX 2022. Все права защищены. <br />
+                        ©WELBEX 2022. Все права защищены.
+                    </div>
+                    <div className="footer__foot-second">
                         Политика конфиденциальности
                     </div>
                 </div>

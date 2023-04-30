@@ -1,18 +1,27 @@
 @import './../../assets/scss/mixin.scss';
 
 .footer {
+    .container {
+        @include adaptive-value('padding-left', 30, 14, 1);
+    }
 
     &__main {
         display: grid;
         grid-template-columns: auto auto auto;
         justify-content: space-between;
-
+        font-weight: 400;
 
         &-title {
             color: #656566;
             font-weight: 700;
             margin-bottom: 10px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             @include adaptive-value('font-size', 14, 12, 1);
+        }
+
+        &__company {
+            &-desc {}
         }
 
         &__menu {
@@ -26,13 +35,12 @@
         }
 
         &__contacts {
-            display: grid;
-            grid-template-columns: auto;
-            gap: 10px;
             text-align: right;
             @include adaptive-value('margin-left', 65, 0, 1);
 
             &-imgs {
+                margin-top: 17px;
+                margin-bottom: 17px;
                 display: flex;
                 gap: 10px;
                 justify-content: flex-end;
@@ -45,12 +53,17 @@
     }
 
     &__foot {
+        @include adaptive-value('font-size', 12, 6, 1);
+        font-family: 'Montserrat';
+        font-weight: 400;
         text-align: right;
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 33px;
+        margin-top: 30px;
+        line-height: 15px;
         padding-bottom: 20px;
 
+        &-second {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -58,13 +71,17 @@
 
 @media (max-width:768px) {
     .footer {
-        @include adaptive-value('padding-top', 80, 45, 1);
+        @include adaptive-value('padding-top', 80, 41, 1);
         @include adaptive-value('padding-bottom', 100, 40, 1);
         background: #0E1014;
 
         &__main {
             grid-template-columns: auto;
             gap: 30px;
+
+            &-title {
+                margin-bottom: 22px;
+            }
 
             &__contacts {
                 margin-bottom: 20px;

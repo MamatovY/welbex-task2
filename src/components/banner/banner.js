@@ -8,22 +8,22 @@ const Banner = () => {
                     Зарабатывайте <br />
                     больше <br />
                     <span>
-                        с WELBEX
+                        с WELBEX
                     </span>
                 </h1>
-                <div>
-                    Развиваем и контролируем <br />
-                    продажи за вас
+                <div className="banner__left-desc">
+                    Развиваем и контролируем <br />
+                    продажи за вас
                 </div>
             </div>
 
             <div className="banner__right">
-                <div>
+                <div className="banner__right-title">
                     Вместе с <span>БЕСПЛАТНОЙ <br />
                         КОНСУЛЬТАЦИЕЙ</span> мы дарим:
                 </div>
                 <div className="banner__right-info">
-                    <div>
+                    <div className="banner__right-info-desktop">
                         <h3>
                             <span>----</span> Виджеты
                         </h3>
@@ -32,7 +32,7 @@ const Banner = () => {
                             решений
                         </div>
                     </div>
-                    <div>
+                    <div className="banner__right-info-desktop">
                         <h3>
                             <span>----</span> Dashboard
                         </h3>
@@ -41,7 +41,7 @@ const Banner = () => {
                             вашего бизнеса
                         </div>
                     </div>
-                    <div>
+                    <div className="banner__right-info-desktop">
                         <h3>
                             <span>----</span> Skype Аудит
                         </h3>
@@ -50,7 +50,7 @@ const Banner = () => {
                             и CRM системы
                         </div>
                     </div>
-                    <div>
+                    <div className="banner__right-info-desktop">
                         <h3>
                             <span>----</span> 35 дней
                         </h3>
@@ -60,6 +60,26 @@ const Banner = () => {
                         </div>
                     </div>
 
+                    <div className="banner__right-info-mob">
+                        <h3>
+                            <span>----</span> SKYPE АУДИТ
+                        </h3>
+                    </div>
+                    <div className="banner__right-info-mob">
+                        <h3>
+                            <span>----</span> 30 ВИДЖЕТОВ
+                        </h3>
+                    </div>
+                    <div className="banner__right-info-mob">
+                        <h3>
+                            <span>----</span> DASHBOARD
+                        </h3>
+                    </div>
+                    <div className="banner__right-info-mob">
+                        <h3>
+                            <span>----</span> МЕСЯЦ AMOCRM
+                        </h3>
+                    </div>
                 </div>
 
                 <div className="banner__right-button">

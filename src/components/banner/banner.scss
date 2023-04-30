@@ -1,39 +1,71 @@
 @import './../../assets/scss/mixin.scss';
 
 .banner {
+    @include adaptive-value('padding-left', 27, 15, 1);
+    @include adaptive-value('padding-right', 29, 0, 1);
     display: flex;
     justify-content: space-between;
-    padding-top: 33px;
-    @include adaptive-value('padding-bottom', 69, 59, 1);
+    padding-top: 34px;
+    @include adaptive-value('padding-bottom', 119, 59, 1);
 
     span {
         font-weight: 900;
     }
 
     &__left {
+        margin-left: 0px;
+
         h1 {
             @include adaptive-value('margin-bottom', 30, 15, 1);
         }
 
-        div {
+        &-desc {
             font-family: 'Montserrat';
             font-weight: 400;
+            line-height: 23px;
+            font-size: 18px;
         }
     }
 
     &__right {
         text-align: right;
-        @include adaptive-value('padding-top', 15, 0, 1);
+        font-size: 18px;
+        @include adaptive-value('padding-top', 16, 0, 1);
+
+        &-title {
+            line-height: 22px;
+
+            span {
+                font-size: 19px;
+
+            }
+        }
 
         &-info {
             display: grid;
             grid-template-columns: auto auto;
             justify-content: start;
             margin-top: 40px;
-            @include adaptive-value('margin-top', 40, 20, 1);
-            @include adaptive-value('gap', 31, 10, 1);
+            @include adaptive-value('margin-top', 36, 19, 1);
+            @include adaptive-value('column-gap', 32, 11, 1);
+            @include adaptive-value('row-gap', 25, 15, 1);
+
+            &-mob {
+                display: none;
+            }
+
+            &-desc {
+                @include adaptive-value('font-size', 16, 8, 1);
+                line-height: 22px;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+            }
 
             h3 {
+                letter-spacing: 0.05em;
+                font-weight: 500;
+                text-transform: uppercase;
+
                 span {
                     display: none;
 
@@ -46,12 +78,13 @@
             max-width: none;
             text-align: center;
             background: #4077F3;
-            width: 93%;
+            width: 88%;
             margin-left: auto;
-            @include adaptive-value('margin-top', 61, 30, 1);
+            @include adaptive-value('font-size', 16, 8, 1);
+            @include adaptive-value('margin-top', 60, 30, 1);
 
-            @include adaptive-value('padding-top', 21, 30, 1);
-            @include adaptive-value('padding-bottom', 21, 30, 1);
+            @include adaptive-value('padding-top', 15, 30, 1);
+            @include adaptive-value('padding-bottom', 15, 30, 1);
         }
 
     }
@@ -65,22 +98,33 @@
             margin-top: 45px;
             text-align: left;
 
-            &-info {
-                h3 {
-                    font-family: 'Montserrat';
-                    font-weight: 500;
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
+            &-title {
+                span {
+                    letter-spacing: -0.02em;
+                    text-transform: lowercase;
+                }
+            }
 
-                    span {
-                        display: inline;
-                        letter-spacing: -0.19em;
-                        font-weight: 500;
-                    }
+            &-info {
+                &-desktop {
+                    display: none;
                 }
 
-                &-desc {
-                    display: none;
+                &-mob {
+                    display: block;
+
+                    h3 {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+
+                        span {
+                            display: inline;
+                            letter-spacing: -0.19em;
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
 

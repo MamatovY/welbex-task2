@@ -17,6 +17,7 @@ body {
   font-weight: 500;
   line-height: 29px;
   @include adaptive-value ('line-height', 29, 15, 1);
+  padding-bottom: 100px;
 
 
 }

@@ -1,41 +1,41 @@
 @import './../../assets/scss/mixin.scss';
 
+
+
 .circle1 {
     position: absolute;
     z-index: 1;
-    @include adaptive-value('top', 73, 200, 1);
-    @include adaptive-value('left', 519, 0, 1);
-    width: 118px;
-    height: 118px;
+    @include adaptive-value('top', 73, 450, 1);
+    @include adaptive-value('left', 505, 20, 1);
+    @include adaptive-value('width', 120, 60, 1);
+    @include adaptive-value('height', 120, 60, 1);
 }
 
 .circle2 {
     position: absolute;
     z-index: 2;
-    top: 0;
-    @include adaptive-value('right', 512, 0, 1);
-    width: 90px;
-    height: 90px;
+    @include adaptive-value('top', 0, 290, 1);
+    @include adaptive-value('right', 490, -30, 1);
+    @include adaptive-value('width', 90, 60, 1);
+    @include adaptive-value('height', 90, 60, 1);
 }
 
 .circle3 {
     position: absolute;
     z-index: 2;
-
-    @include adaptive-value('bottom', 405, 200, 1);
-    @include adaptive-value('right', 561, 0, 1);
-    width: 48px;
-    height: 48px;
+    @include adaptive-value('top', 544, 0, 1);
+    @include adaptive-value('right', 554, 0, 1);
+    width: 40px;
+    height: 40px;
 }
 
 .gradient1 {
-    // display: none;
     position: absolute;
-    z-index: 3;
-    width: 259px;
-    height: 259px;
+    z-index: 33;
+    @include adaptive-value('width', 259, 210, 1);
+    @include adaptive-value('height', 259, 210, 1);
+    @include adaptive-value('top', 0, 300, 1);
     @include adaptive-value('left', 602, 0, 1);
-    top: 0;
     background: #833AB4;
     opacity: 0.5;
     filter: blur(196px);
@@ -44,11 +44,44 @@
 .gradient2 {
     position: absolute;
     z-index: 4;
-    width: 311px;
-    height: 311px;
+    @include adaptive-value('width', 311, 259, 1);
+    @include adaptive-value('height', 311, 259, 1);
+    @include adaptive-value('right', -500, -50, 1);
     left: 0;
     top: 251px;
     background: #961A1A;
     opacity: 0.5;
     filter: blur(196px);
+}
+
+
+@media (max-width:768px) {
+    .circle1 {
+        top: 450px;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle2 {
+        top: 290px;
+        right: -30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .gradient1 {
+        width: 210px;
+        height: 210px;
+        top: 300px;
+        left: 0;
+    }
+
+    .gradient2 {
+        width: 259px;
+        height: 259px;
+        right: -50px;
+        left: auto;
+        top: 160px;
+    }
 }
