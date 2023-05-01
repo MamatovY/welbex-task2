@@ -25,7 +25,7 @@ const Banner = () => {
                 <div className="banner__right-info">
                     <div className="banner__right-info-desktop">
                         <h3>
-                            <span>----</span> Виджеты
+                            Виджеты
                         </h3>
                         <div className="banner__right-info-desc">
                             30 готовых <br />
@@ -34,7 +34,7 @@ const Banner = () => {
                     </div>
                     <div className="banner__right-info-desktop">
                         <h3>
-                            <span>----</span> Dashboard
+                            Dashboard
                         </h3>
                         <div className="banner__right-info-desc">
                             с показателями <br />
@@ -43,7 +43,7 @@ const Banner = () => {
                     </div>
                     <div className="banner__right-info-desktop">
                         <h3>
-                            <span>----</span> Skype Аудит
+                            Skype Аудит
                         </h3>
                         <div className="banner__right-info-desc">
                             отдела продаж <br />
@@ -52,7 +52,7 @@ const Banner = () => {
                     </div>
                     <div className="banner__right-info-desktop">
                         <h3>
-                            <span>----</span> 35 дней
+                            35 дней
                         </h3>
                         <div className="banner__right-info-desc">
                             использования <br />
