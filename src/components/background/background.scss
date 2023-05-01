@@ -1,7 +1,6 @@
 @import './../../assets/scss/mixin.scss';
 
 
-
 .circle1 {
     position: absolute;
     z-index: 1;
@@ -13,16 +12,16 @@
 
 .circle2 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     @include adaptive-value('top', 0, 290, 1);
-    @include adaptive-value('right', 490, -30, 1);
+    @include adaptive-value('right', 490, 0, 1);
     @include adaptive-value('width', 90, 60, 1);
     @include adaptive-value('height', 90, 60, 1);
 }
 
 .circle3 {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     @include adaptive-value('top', 544, 0, 1);
     @include adaptive-value('right', 554, 0, 1);
     width: 40px;
@@ -46,7 +45,6 @@
     z-index: 4;
     @include adaptive-value('width', 311, 259, 1);
     @include adaptive-value('height', 311, 259, 1);
-    @include adaptive-value('right', -500, -50, 1);
     left: 0;
     top: 251px;
     background: #961A1A;
@@ -65,7 +63,7 @@
 
     .circle2 {
         top: 290px;
-        right: -30px;
+        right: 0px;
         width: 60px;
         height: 60px;
     }
@@ -74,13 +72,13 @@
         width: 210px;
         height: 210px;
         top: 300px;
-        left: 0;
+        transform: translateX(-55px);
     }
 
     .gradient2 {
         width: 259px;
         height: 259px;
-        right: -50px;
+        right: 0px;
         left: auto;
         top: 160px;
     }

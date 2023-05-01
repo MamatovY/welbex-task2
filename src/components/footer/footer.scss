@@ -1,8 +1,10 @@
 @import './../../assets/scss/mixin.scss';
 
 .footer {
+    @include adaptive-value('font-size', 16, 14, 1);
+
     .container {
-        @include adaptive-value('padding-left', 30, 14, 1);
+        @include adaptive-value('padding-left', 30, 15, 1);
     }
 
     &__main {
@@ -30,7 +32,11 @@
                 grid-template-columns: auto auto;
                 justify-content: start;
                 column-gap: 52px;
-                @include adaptive-value('column-gap', 52, 48, 1);
+                @include adaptive-value('column-gap', 52, 32, 1);
+
+                .mob {
+                    display: none;
+                }
             }
         }
 
@@ -53,15 +59,16 @@
     }
 
     &__foot {
-        @include adaptive-value('font-size', 12, 6, 1);
+        font-size: 12px;
         font-family: 'Montserrat';
         font-weight: 400;
         text-align: right;
-        margin-top: 30px;
+        margin-top: 29px;
         line-height: 15px;
         padding-bottom: 20px;
 
         &-second {
+            margin-top: 5px;
             text-decoration: underline;
         }
     }
@@ -71,31 +78,67 @@
 
 @media (max-width:768px) {
     .footer {
-        @include adaptive-value('padding-top', 80, 41, 1);
+        @include adaptive-value('padding-top', 80, 42, 1);
         @include adaptive-value('padding-bottom', 100, 40, 1);
         background: #0E1014;
 
         &__main {
             grid-template-columns: auto;
-            gap: 30px;
+            gap: 31px;
 
             &-title {
-                margin-bottom: 22px;
+                margin-bottom: 20px;
+            }
+
+            &__company {
+                &-desc {
+                    display: grid;
+                    gap: 12px;
+                }
+            }
+
+            &__menu {
+                &-desc {
+                    row-gap: 10px;
+                    line-height: 17px;
+
+                    .desktop {
+                        display: none;
+                    }
+
+                    .mob {
+                        display: block;
+                    }
+                }
             }
 
             &__contacts {
                 margin-bottom: 20px;
                 text-align: left;
 
+                &-number {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
                 &-imgs {
+                    margin: 11px 0;
                     justify-content: start;
+                    gap: 11px;
+
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
         }
 
         &__foot {
+            margin-top: 31px;
             text-align: left;
-            display: block;
+
+            &-second {}
         }
     }
 

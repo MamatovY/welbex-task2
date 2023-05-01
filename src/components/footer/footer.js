@@ -28,34 +28,66 @@ const Footer = () => {
                         </div>
                         <div className="footer__main__menu-desc">
 
-                            <div>
+                            <div className='desktop'>
                                 Расчёт стоимости
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Кейсы
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Услуги
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Благодарственные письма
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Виджеты
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Сертификаты
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Интеграции
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Блог на Youtube
                             </div>
-                            <div>
+                            <div className='desktop'>
                                 Наши клиенты
                             </div>
-                            <div>
+                            <div className='desktop'>
+                                Вопрос / Ответ
+                            </div>
+
+
+                            <div className='mob'>
+                                Расчёт стоимости
+                            </div>
+                            <div className='mob'>
+                                Благодарность клиентов
+                            </div>
+                            <div className='mob'>
+                                Услуги
+                            </div>
+                            <div className='mob'>
+                                Кейсы
+                            </div>
+                            <div className='mob'>
+                                Виджеты
+                            </div>
+                            <div className='mob'>
+                                Сертификаты
+                            </div>
+                            <div className='mob'>
+                                Интеграции
+                            </div>
+                            <div className='mob'>
+                                Блог на Youtube
+                            </div>
+                            <div className='mob'>
+                                Наши клиенты
+                            </div>
+                            <div className='mob'>
                                 Вопрос / Ответ
                             </div>
                         </div>
@@ -65,7 +97,7 @@ const Footer = () => {
                         <div className="footer__main-title">
                             Контакты
                         </div>
-                        <div>
+                        <div className="footer__main__contacts-number">
                             +7 555 555-55-55
                         </div>
                         <div className="footer__main__contacts-imgs">

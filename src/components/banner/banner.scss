@@ -59,6 +59,11 @@
                 line-height: 22px;
                 font-weight: 400;
                 letter-spacing: 0.04em;
+
+                h1 {
+                    margin-bottom: 2px;
+                }
+
             }
 
             h3 {
@@ -93,6 +98,7 @@
 @media (max-width:768px) {
     .banner {
         display: block;
+        padding-top: 40px;
 
         &__right {
             margin-top: 45px;
@@ -102,6 +108,7 @@
                 span {
                     letter-spacing: -0.02em;
                     text-transform: lowercase;
+                    font-size: 18px;
                 }
             }
 
