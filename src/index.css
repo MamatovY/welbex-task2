@@ -29,9 +29,3 @@ ol,
 li {
   list-style: none;
 }
-
-html,
-body {
-  height: 100%;
-  line-height: 1;
-}
